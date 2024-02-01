@@ -2,8 +2,7 @@ name: Deployment
 on:
   push:
     branches:
-      - main
-      - dev
+      - master
 env:
   MONGODB_DB_NAME: gha-demo
 jobs:
@@ -39,4 +38,3 @@ jobs:
       - name: Output information
         run: |        
             echo "MONGODB_DB_NAME: $MONGODB_DB_NAME"
- # echo "MONGODB_PASSWORD: ${{env.MONGODB_USERNAME}}"
